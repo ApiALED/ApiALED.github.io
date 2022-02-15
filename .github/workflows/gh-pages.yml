@@ -22,7 +22,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo serve
+        run: sudo npm install -g postcss-cli && hugo serve
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
