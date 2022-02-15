@@ -22,7 +22,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: npm install -g postcss-cli && hugo --minify
+        run: npm install -g autoprefixer && npm install -g postcss-cli && npm install -D postcss && hugo --minify
         
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
