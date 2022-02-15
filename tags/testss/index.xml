@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ALED – Reference</title><link>https://apialed.github.io/docs/reference/</link><description>Recent content in Reference on ALED</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://apialed.github.io/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Parameter Reference</title><link>https://apialed.github.io/docs/reference/parameter-reference/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>https://apialed.github.io/docs/reference/parameter-reference/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ALED – testss</title><link>https://apialed.github.io/tags/testss/</link><description>Recent content in testss on ALED</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://apialed.github.io/tags/testss/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Example Page</title><link>https://apialed.github.io/docs/getting-started/example-page/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>https://apialed.github.io/docs/getting-started/example-page/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>This is a placeholder page. Replace it with your own content.&lt;/p>
 &lt;/div>
@@ -250,4 +250,15 @@ This is a warning.
 This is a warning with a title.
 &lt;/div>
 &lt;/p>
-&lt;h2 id="another-heading">Another Heading&lt;/h2></description></item></channel></rss>
+&lt;h2 id="another-heading">Another Heading&lt;/h2>
+&lt;p>Add some sections here to see how the ToC looks like. Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.&lt;/p>
+&lt;h3 id="this-document">This Document&lt;/h3>
+&lt;p>Inguina genus: Anaphen post: lingua violente voce suae meus aetate diversi. Orbis unam nec flammaeque status deam Silenum erat et a ferrea. Excitus rigidum ait: vestro et Herculis convicia: nitidae deseruit coniuge Proteaque adiciam &lt;em>eripitur&lt;/em>? Sitim noceat signa &lt;em>probat quidem&lt;/em>. Sua longis &lt;em>fugatis&lt;/em> quidem genae.&lt;/p>
+&lt;h3 id="pixel-count">Pixel Count&lt;/h3>
+&lt;p>Tilde photo booth wayfarers cliche lomo intelligentsia man braid kombucha vaporware farm-to-table mixtape portland. PBR&amp;amp;B pickled cornhole ugh try-hard ethical subway tile. Fixie paleo intelligentsia pabst. Ennui waistcoat vinyl gochujang. Poutine salvia authentic affogato, chambray lumbersexual shabby chic.&lt;/p>
+&lt;h3 id="contact-info">Contact Info&lt;/h3>
+&lt;p>Plaid hell of cred microdosing, succulents tilde pour-over. Offal shabby chic 3 wolf moon blue bottle raw denim normcore poutine pork belly.&lt;/p>
+&lt;h3 id="external-links">External Links&lt;/h3>
+&lt;p>Stumptown PBR&amp;amp;B keytar plaid street art, forage XOXO pitchfork selvage affogato green juice listicle pickled everyday carry hashtag. Organic sustainable letterpress sartorial scenester intelligentsia swag bushwick. Put a bird on it stumptown neutra locavore. IPhone typewriter messenger bag narwhal. Ennui cold-pressed seitan flannel keytar, single-origin coffee adaptogen occupy yuccie williamsburg chillwave shoreditch forage waistcoat.&lt;/p>
+&lt;pre tabindex="0">&lt;code>This is the final element on the page and there should be no margin below this.
+&lt;/code>&lt;/pre></description></item></channel></rss>
