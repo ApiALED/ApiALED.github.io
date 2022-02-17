@@ -127,8 +127,10 @@
 <ul>
 <li><a href=#api-creation>API creation</a></li>
 <li><a href=#api-election>API election</a></li>
+<li><a href=#implemantation-follow-ups>Implemantation Follow-ups</a></li>
 </ul>
 </li>
+<li><a href=#general-setpoints><strong>General setpoints</strong></a></li>
 </ul>
 </nav></div>
 <div class="taxonomy taxonomy-terms-cloud taxo-tags">
@@ -308,26 +310,38 @@ Your project must also be built using C++11 at the very least</p>
 </ul>
 <h2 id=project-steps><strong>Project steps</strong></h2>
 <h3 id=api-creation>API creation</h3>
+<p>Create an API capable of handling modules and think wisely about the architecture of it.
+You’re greatly encouraged to come and present your API to the first follow-up to get feedbacks on it and
+improve your architecture skills.</p>
 <h3 id=api-election>API election</h3>
+<p>The election will take place after the first follow-up, talk with your pedagogical team to know the details of
+submission. But here are some general rules:</p>
+<ul>
+<li>Submitting your API is optional but greatly encouraged</li>
+<li>If the elected group ignores help requests from other groups or cities, it will face severe consequences.</li>
+<li>Having your API elected is rewarded during the unit validation.
+Once the election is finished, you will start implementing your <strong>Zia</strong> by <strong>CONFORMING TO</strong> the elected API.</li>
+</ul>
+<h3 id=implemantation-follow-ups>Implemantation Follow-ups</h3>
+<p>These follow-ups let us assert your progress on the project and evaluate its quality. It is very important that
+you be very dynamic during these follow-ups, as they are the last steps before the final defense.</p>
+<h2 id=general-setpoints><strong>General setpoints</strong></h2>
+<p>You are (more or less) free to implement the project any way you please. However, here are a few restrictions:</p>
+<ul>
+<li>The only authorized functions from the <strong>libc</strong> are the ones that wrap system calls (and don’t have C++
+equivalents!)</li>
+<li>Any solution to a problem <strong>MUST</strong> be object-oriented.</li>
+<li>Any not explicitly authorized library is explicitly forbidden.</li>
+<li>Any value passed by copy instead of reference or pointer MUST be justified.</li>
+<li>Any member function or method that does not modify the current instance and is not const MUST
+be justified.</li>
+<li>Any code that is deemed unreadable, unmaintainable or with unnecessary performance costs <strong>WILL</strong>
+be sanctioned. Be rigorous! Write code you’ll be proud of!</li>
+</ul>
 <div class=section-index>
 </div>
-<style>.feedback--answer{display:inline-block}.feedback--answer-no{margin-left:1em}.feedback--response{display:none;margin-top:1em}.feedback--response__visible{display:block}</style>
-<div class=d-print-none>
-<h2 class=feedback--title>Feedback</h2>
-<p class=feedback--question>Was this page helpful?</p>
-<button class="btn btn-primary mb-4 feedback--answer feedback--answer-yes">Yes</button>
-<button class="btn btn-primary mb-4 feedback--answer feedback--answer-no">No</button>
-<p class="feedback--response feedback--response-yes">
-Glad to hear it! Please <a href=https://github.com/USERNAME/REPOSITORY/issues/new>tell us how we can improve</a>.
-</p>
-<p class="feedback--response feedback--response-no">
-Sorry to hear that. Please <a href=https://github.com/USERNAME/REPOSITORY/issues/new>tell us how we can improve</a>.
-</p>
-</div>
-<script>const yesButton=document.querySelector('.feedback--answer-yes'),noButton=document.querySelector('.feedback--answer-no'),yesResponse=document.querySelector('.feedback--response-yes'),noResponse=document.querySelector('.feedback--response-no'),disableButtons=()=>{yesButton.disabled=!0,noButton.disabled=!0},sendFeedback=b=>{if(typeof ga!='function')return;const a={command:'send',hitType:'event',category:'Helpful',action:'click',label:window.location.pathname,value:b};ga(a.command,a.hitType,a.category,a.action,a.label,a.value)};yesButton.addEventListener('click',()=>{yesResponse.classList.add('feedback--response__visible'),disableButtons(),sendFeedback(1)}),noButton.addEventListener('click',()=>{noResponse.classList.add('feedback--response__visible'),disableButtons(),sendFeedback(0)})</script>
-<br>
 <div class="text-muted mt-5 pt-3 border-top">
-Last modified 15.02.2022: <a href=https://github.com/google/docsy-example/commit/221d291693ce0032918b37b8d4e5cdfb17f9c12e>change download button and readme (221d291)</a>
+Last modified 17.02.2022: <a href=https://github.com/google/docsy-example/commit/f70226780174b496394aa06cbd2d0b12f30e0ab5>subject and feedback (f702267)</a>
 </div>
 </div>
 </main>
