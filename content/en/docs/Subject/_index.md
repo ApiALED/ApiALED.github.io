@@ -179,4 +179,36 @@ During your final defense, your server must be usable with these client programs
 
 ## **Project steps**
 ### API creation
+
+Create an API capable of handling modules and think wisely about the architecture of it.
+You’re greatly encouraged to come and present your API to the first follow-up to get feedbacks on it and
+improve your architecture skills.
+
 ### API election
+
+The election will take place after the first follow-up, talk with your pedagogical team to know the details of
+submission. But here are some general rules:
+* Submitting your API is optional but greatly encouraged
+* If the elected group ignores help requests from other groups or cities, it will face severe consequences.
+* Having your API elected is rewarded during the unit validation.
+Once the election is finished, you will start implementing your **Zia** by **CONFORMING TO** the elected API.
+
+
+### Implemantation Follow-ups
+
+These follow-ups let us assert your progress on the project and evaluate its quality. It is very important that
+you be very dynamic during these follow-ups, as they are the last steps before the final defense.
+
+
+## **General setpoints**
+
+You are (more or less) free to implement the project any way you please. However, here are a few restrictions:
+* The only authorized functions from the **libc** are the ones that wrap system calls (and don’t have C++
+equivalents!)
+* Any solution to a problem **MUST** be object-oriented.
+* Any not explicitly authorized library is explicitly forbidden.
+* Any value passed by copy instead of reference or pointer MUST be justified.
+* Any member function or method that does not modify the current instance and is not const MUST
+be justified.
+* Any code that is deemed unreadable, unmaintainable or with unnecessary performance costs **WILL**
+be sanctioned. Be rigorous! Write code you’ll be proud of!
