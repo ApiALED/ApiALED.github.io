@@ -1,7 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ALED – sample</title><link>https://apialed.github.io/tags/sample/</link><description>Recent content in sample on ALED</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://apialed.github.io/tags/sample/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Class Diagram</title><link>https://apialed.github.io/docs/diagrams/flow-diagram/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>https://apialed.github.io/docs/diagrams/flow-diagram/</guid><description>
 &lt;h2 id="class-diagram">&lt;strong>Class diagram&lt;/strong>&lt;/h2>
 &lt;div class="pageinfo pageinfo-primary">
-&lt;p>&lt;img src="http://image.noelshack.com/fichiers/2022/08/1/1645450258-zia-diagramme-de-classes-le-propre-drawio-2.png" alt="Full Image">&lt;/p>
+&lt;p>-&amp;gt; &lt;a href="http://www.noelshack.com/2022-08-1-1645450258-zia-diagramme-de-classes-le-propre-drawio-2.png">http://www.noelshack.com/2022-08-1-1645450258-zia-diagramme-de-classes-le-propre-drawio-2.png&lt;/a>
+&lt;img src="http://image.noelshack.com/fichiers/2022/08/1/1645450258-zia-diagramme-de-classes-le-propre-drawio-2.png" alt="Full Image">&lt;/p>
 &lt;/div></description></item><item><title>Docs: Flow Diagram</title><link>https://apialed.github.io/docs/diagrams/class-diagram/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>https://apialed.github.io/docs/diagrams/class-diagram/</guid><description>
 &lt;h2 id="flow-diagram">&lt;strong>Flow Diagram&lt;/strong>&lt;/h2>
 &lt;div class="pageinfo pageinfo-primary">
