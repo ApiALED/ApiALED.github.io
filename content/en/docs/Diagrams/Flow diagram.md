@@ -9,6 +9,6 @@ description: C'est la classe.
 
 ## **Class diagram**
 {{% pageinfo %}}
-![Full Image](http://image.noelshack.com/fichiers/2022/08/1/1645440637-zia-diagramme-de-classes-le-propre-drawio.png)
+![Full Image](http://image.noelshack.com/fichiers/2022/08/1/1645450258-zia-diagramme-de-classes-le-propre-drawio-2.png)
 {{% /pageinfo %}}
 
