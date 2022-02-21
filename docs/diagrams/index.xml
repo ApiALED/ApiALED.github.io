@@ -1,7 +1,36 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ALED – Diagrams</title><link>https://apialed.github.io/docs/diagrams/</link><description>Recent content in Diagrams on ALED</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://apialed.github.io/docs/diagrams/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Class Diagram</title><link>https://apialed.github.io/docs/diagrams/class-diagram/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>https://apialed.github.io/docs/diagrams/class-diagram/</guid><description>
-&lt;h2 id="class-diagram">&lt;strong>Class Diagram&lt;/strong>&lt;/h2>
-&lt;p>&lt;img src="https://raw.githubusercontent.com/i-saumitra/Voice-controlled-MP3-Player/master/screenshot.jpg" alt="ScreenShot">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ALED – Diagrams</title><link>https://apialed.github.io/docs/diagrams/</link><description>Recent content in Diagrams on ALED</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://apialed.github.io/docs/diagrams/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Class Diagram</title><link>https://apialed.github.io/docs/diagrams/flow-diagram/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>https://apialed.github.io/docs/diagrams/flow-diagram/</guid><description>
+&lt;h2 id="class-diagram">&lt;strong>Class diagram&lt;/strong>&lt;/h2>
 &lt;div class="pageinfo pageinfo-primary">
-&lt;p>This is a placeholder page. Replace it with your own content.&lt;/p>
+&lt;p>&lt;img src="http://image.noelshack.com/fichiers/2022/08/1/1645440637-zia-diagramme-de-classes-le-propre-drawio.png" alt="Full Image">&lt;/p>
+&lt;/div></description></item><item><title>Docs: Flow Diagram</title><link>https://apialed.github.io/docs/diagrams/class-diagram/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>https://apialed.github.io/docs/diagrams/class-diagram/</guid><description>
+&lt;h2 id="flow-diagram">&lt;strong>Flow Diagram&lt;/strong>&lt;/h2>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>&lt;img src="http://image.noelshack.com/fichiers/2022/08/1/1645438287-diagramme-classe.png" alt="Full Image">&lt;/p>
 &lt;/div>
-&lt;/p></description></item></channel></rss>
+&lt;h3 id="-----">- - -&lt;/h3>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>&lt;img src="http://image.noelshack.com/fichiers/2022/08/1/1645438921-first.png" alt="Full Image">&lt;/p>
+&lt;/div>
+&lt;p>First we pass by the &lt;strong>&lt;strong>Core&lt;/strong>&lt;/strong>. the goal of this class is to make the link between everything else (chapeauter in French). The class will store all the information needed for the &lt;strong>ZIA&lt;/strong>.&lt;/p>
+&lt;p>The first thing we do is call the Config Loader, it will look for the config.json file (it can be anywhere) if the file is not found it will load a default configuration. The config file should look like this :&lt;/p>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>&lt;img src="http://image.noelshack.com/fichiers/2022/08/1/1645439643-config.png" alt="Full Image">&lt;/p>
+&lt;/div>
+&lt;p>It MUST have a &lt;strong>“Modules”&lt;/strong> flag which MUST have a &lt;strong>“Path”&lt;/strong> and &lt;strong>“List”&lt;/strong> flag, the list represents the order the module needs to be loaded and used, and the path is where they are stored.&lt;/p>
+&lt;p>It MUST have a &lt;strong>“Hosts”&lt;/strong> flag which will indicate the address will listen on, this flag could change in the future.&lt;/p>
+&lt;p>It MUST have a &lt;strong>“SSL”&lt;/strong> flag which has a &lt;strong>“Certificate”&lt;/strong> and &lt;strong>“Key”&lt;/strong> path, they will represent the path to find what is needed for the SSL.&lt;/p>
+&lt;p>Then we call the Logger to inform the server of the configuration it need.&lt;/p>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>&lt;img src="http://image.noelshack.com/fichiers/2022/08/1/1645440181-second.png" alt="Full Image">&lt;/p>
+&lt;/div>
+&lt;p>Now that we have the path and name of the modules we can start to load them using the &lt;strong>“Module Loader”&lt;/strong>.&lt;/p>
+&lt;p>Once loaded we can start the &lt;strong>“network”&lt;/strong> part, create the listener and socket thanks to the config.&lt;/p>
+&lt;p>Once it is done, we start getting HTTP requests by client, we need to store everything inside a request list ! Then the multi-threading starts every worker will start to take a job, don’t forget to mutex the request they take !&lt;/p>
+&lt;p>Every worker will go through the list of modules given in the config file, to create a response and send it to the client.&lt;/p>
+&lt;p>To be clear, an HTTP request is a processing list. Every module will get as parameters the object, request, response, and PL.&lt;/p>
+&lt;ul>
+&lt;li>The request is a representation of the received request; it will get full after the parsing of the client request.&lt;/li>
+&lt;li>The response is the object created in function of the received request&lt;/li>
+&lt;li>PL is the processing list attached to the request.&lt;/li>
+&lt;/ul>
+&lt;p>If you have any &lt;strong>fatal error&lt;/strong> you should throw a “&lt;strong>fatalException”&lt;/strong>, set an error message and catch it in the main function. Then you can use the &lt;strong>“Logger”&lt;/strong> to print the error message and also the function where the error occured.&lt;/p></description></item></channel></rss>
