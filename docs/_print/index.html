@@ -76,7 +76,29 @@ This is the multi-page printable view of this section.
 <li>1.1: <a href=#pg-b06c2592c47fb0a8d813876f748b8c8a>Class Diagram</a></li>
 <li>1.2: <a href=#pg-f349026c4014fa7b6958ddf7ffa74527>Flow Diagram</a></li>
 </ul>
-<li>2: <a href=#pg-ad14978bb3c24da59bcc3d0c96f60313>Subject</a></li>
+<li>2: <a href=#pg-22edef2fb893ef3d8ae1351a11c65c46>Headers</a></li>
+<ul>
+<li>2.1: <a href=#pg-0493d3c48521eb210cd01d867963d923>Communication Headers</a></li>
+<ul>
+<li>2.1.1: <a href=#pg-b3e7ed2565c52282d4711bd4fb4d1461>Request Header</a></li>
+<li>2.1.2: <a href=#pg-344c765dcafe9d915d94947f94473d5b>Response Header</a></li>
+</ul>
+<li>2.2: <a href=#pg-fefc96e5e4994cf914db82252263356b>Core Headers</a></li>
+<ul>
+<li>2.2.1: <a href=#pg-e1427513451da937b002d6f8f42e77f5>Cofig Header</a></li>
+<li>2.2.2: <a href=#pg-a142eed32f65caf3e61d132e564cdcdf>Core Header</a></li>
+<li>2.2.3: <a href=#pg-48409a24c1b717dfa33e98248b7c55b0>fatalException Header</a></li>
+<li>2.2.4: <a href=#pg-beb22cfd8077ec6f88ff74376df29a86>Logger Header</a></li>
+<li>2.2.5: <a href=#pg-24fdfc9437eea9a3bd0b58f6ec0c9602>ModuleLoader Header</a></li>
+<li>2.2.6: <a href=#pg-3b5eecfcd43d5c6261106cdbaa8a2e61>ThreadPool Header</a></li>
+</ul>
+<li>2.3: <a href=#pg-3034c988c861e9e545da88c236839666>Modules Headers</a></li>
+<ul>
+<li>2.3.1: <a href=#pg-eb7bb1075051bbc22919ffedcce605cd>IModules Header</a></li>
+<li>2.3.2: <a href=#pg-a099b94ab0f80f537f929b2076232bc0>ModuleTemplate Header</a></li>
+</ul>
+</ul>
+<li>3: <a href=#pg-ad14978bb3c24da59bcc3d0c96f60313>Subject</a></li>
 <ul>
 </ul>
 </ul>
@@ -117,8 +139,7 @@ This is the multi-page printable view of this section.
 <div class=lead>C&rsquo;est la classe.</div>
 <h2 id=class-diagram><strong>Class diagram</strong></h2>
 <div class="pageinfo pageinfo-primary">
-<p>-> <a href=http://www.noelshack.com/2022-08-1-1645450258-zia-diagramme-de-classes-le-propre-drawio-2.png>http://www.noelshack.com/2022-08-1-1645450258-zia-diagramme-de-classes-le-propre-drawio-2.png</a>
-<img src=http://image.noelshack.com/fichiers/2022/08/1/1645450258-zia-diagramme-de-classes-le-propre-drawio-2.png alt="Full Image"></p>
+<p><img src=http://image.noelshack.com/fichiers/2022/08/4/1645710689-diagramme-class.png alt="Full Image"></p>
 </div>
 </div>
 <div class=td-content style=page-break-before:always>
@@ -157,7 +178,635 @@ This is the multi-page printable view of this section.
 <p>If you have any <strong>fatal error</strong> you should throw a “<strong>fatalException”</strong>, set an error message and catch it in the main function. Then you can use the <strong>“Logger”</strong> to print the error message and also the function where the error occured.</p>
 </div>
 <div class=td-content style=page-break-before:always>
-<h1 id=pg-ad14978bb3c24da59bcc3d0c96f60313>2 - Subject</h1>
+<h1 id=pg-22edef2fb893ef3d8ae1351a11c65c46>2 - Headers</h1>
+<div class=lead>What does your user need to know to try your project?</div>
+</div>
+<div class=td-content>
+<h1 id=pg-0493d3c48521eb210cd01d867963d923>2.1 - Communication Headers</h1>
+<div class=lead>What does your user need to know to try your project?</div>
+</div>
+<div class=td-content>
+<h1 id=pg-b3e7ed2565c52282d4711bd4fb4d1461>2.1.1 - Request Header</h1>
+<div class=lead>Here is the header for the request object.</div>
+<div class=highlight><div style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#204a87;font-weight:700>namespace</span> <span style=color:#000>Network</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>class</span> <span style=color:#000>Request</span> <span style=color:#000;font-weight:700>{</span>
+        <span style=color:#204a87;font-weight:700>public</span><span style=color:#ce5c00;font-weight:700>:</span>
+            <span style=color:#000>Request</span><span style=color:#000;font-weight:700>();</span>
+            <span style=color:#ce5c00;font-weight:700>~</span><span style=color:#000>Request</span><span style=color:#000;font-weight:700>();</span>
+            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>setURL</span><span style=color:#000;font-weight:700>(</span><span style=color:#204a87;font-weight:700>const</span> <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000;font-weight:700>);</span>
+            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>setMethod</span><span style=color:#000;font-weight:700>(</span><span style=color:#204a87;font-weight:700>const</span> <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000;font-weight:700>);</span>
+            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>setRequest</span><span style=color:#000;font-weight:700>(</span><span style=color:#204a87;font-weight:700>const</span> <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>vector</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span><span style=color:#ce5c00;font-weight:700>&gt;</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000;font-weight:700>);</span>
+
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>getURL</span><span style=color:#000;font-weight:700>();</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>getMethod</span><span style=color:#000;font-weight:700>();</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>vector</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span><span style=color:#ce5c00;font-weight:700>&gt;</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>getRequest</span><span style=color:#000;font-weight:700>();</span>
+        <span style=color:#204a87;font-weight:700>protected</span><span style=color:#ce5c00;font-weight:700>:</span>
+        <span style=color:#204a87;font-weight:700>private</span><span style=color:#ce5c00;font-weight:700>:</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#000>URL</span><span style=color:#000;font-weight:700>;</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#000>method</span><span style=color:#000;font-weight:700>;</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>vector</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span><span style=color:#ce5c00;font-weight:700>&gt;</span> <span style=color:#000>request</span><span style=color:#000;font-weight:700>;</span>
+    <span style=color:#000;font-weight:700>};</span>
+<span style=color:#000;font-weight:700>}</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<div class=td-content style=page-break-before:always>
+<h1 id=pg-344c765dcafe9d915d94947f94473d5b>2.1.2 - Response Header</h1>
+<div class=lead>Here is the header for the response object.</div>
+<div class=highlight><div style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#204a87;font-weight:700>namespace</span> <span style=color:#000>Network</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>class</span> <span style=color:#000>Response</span> <span style=color:#000;font-weight:700>{</span>
+        <span style=color:#204a87;font-weight:700>public</span><span style=color:#ce5c00;font-weight:700>:</span>
+            <span style=color:#000>Response</span><span style=color:#000;font-weight:700>();</span>
+            <span style=color:#ce5c00;font-weight:700>~</span><span style=color:#000>Response</span><span style=color:#000;font-weight:700>();</span>
+
+            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>SetStatusCode</span><span style=color:#000;font-weight:700>(</span><span style=color:#204a87;font-weight:700>int</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000;font-weight:700>);</span>
+            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>SetStatusMsg</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000;font-weight:700>);</span>
+
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#000>getStatusMsg</span><span style=color:#000;font-weight:700>();</span>
+            <span style=color:#204a87;font-weight:700>int</span> <span style=color:#000>getStatusCode</span><span style=color:#000;font-weight:700>();</span>
+        <span style=color:#204a87;font-weight:700>protected</span><span style=color:#ce5c00;font-weight:700>:</span>
+        <span style=color:#204a87;font-weight:700>private</span><span style=color:#ce5c00;font-weight:700>:</span>
+            <span style=color:#204a87;font-weight:700>int</span> <span style=color:#000>statusCode</span><span style=color:#000;font-weight:700>;</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#000>statusMsg</span><span style=color:#000;font-weight:700>;</span>
+    <span style=color:#000;font-weight:700>};</span>
+<span style=color:#000;font-weight:700>}</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<div class=td-content style=page-break-before:always>
+<h1 id=pg-fefc96e5e4994cf914db82252263356b>2.2 - Core Headers</h1>
+<div class=lead>What does your user need to know to try your project?</div>
+</div>
+<div class=td-content>
+<h1 id=pg-e1427513451da937b002d6f8f42e77f5>2.2.1 - Cofig Header</h1>
+<div class=lead>Here is the header for the Config object.</div>
+<div class=highlight><div style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#204a87;font-weight:700>namespace</span> <span style=color:#000>Zia</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>class</span> <span style=color:#000>Config</span> <span style=color:#000;font-weight:700>{</span>
+        <span style=color:#204a87;font-weight:700>public</span><span style=color:#ce5c00;font-weight:700>:</span>
+            <span style=color:#000>Config</span><span style=color:#000;font-weight:700>();</span>
+            <span style=color:#ce5c00;font-weight:700>~</span><span style=color:#000>Config</span><span style=color:#000;font-weight:700>();</span>
+
+            <span style=color:#204a87;font-weight:700>bool</span> <span style=color:#000>LoadConfig</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000;font-weight:700>);</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>getModulePath</span><span style=color:#000;font-weight:700>();</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>list</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span><span style=color:#ce5c00;font-weight:700>&gt;</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>getModuleList</span><span style=color:#000;font-weight:700>();</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>getCertPath</span><span style=color:#000;font-weight:700>();</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>getKeyPath</span><span style=color:#000;font-weight:700>();</span>
+            <span style=color:#204a87;font-weight:700>unsigned</span> <span style=color:#204a87;font-weight:700>int</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>getPort</span><span style=color:#000;font-weight:700>();</span>
+        <span style=color:#204a87;font-weight:700>protected</span><span style=color:#ce5c00;font-weight:700>:</span>
+        <span style=color:#204a87;font-weight:700>private</span><span style=color:#ce5c00;font-weight:700>:</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>list</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span><span style=color:#ce5c00;font-weight:700>&gt;</span> <span style=color:#000>ModuleList</span><span style=color:#000;font-weight:700>;</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#000>ModulePath</span><span style=color:#000;font-weight:700>;</span>
+            <span style=color:#204a87;font-weight:700>unsigned</span> <span style=color:#204a87;font-weight:700>int</span> <span style=color:#000>port</span><span style=color:#000;font-weight:700>;</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#000>certif_path</span><span style=color:#000;font-weight:700>;</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#000>key_path</span><span style=color:#000;font-weight:700>;</span>
+            <span style=color:#204a87;font-weight:700>bool</span> <span style=color:#000>isDir</span><span style=color:#000;font-weight:700>(</span><span style=color:#204a87;font-weight:700>const</span> <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>in_name</span><span style=color:#000;font-weight:700>);</span>
+            <span style=color:#204a87;font-weight:700>bool</span> <span style=color:#000>readJsonFile</span><span style=color:#000;font-weight:700>(</span><span style=color:#204a87;font-weight:700>const</span> <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>path</span><span style=color:#000;font-weight:700>);</span>
+            <span style=color:#204a87;font-weight:700>bool</span> <span style=color:#000>loadDefaultConfig</span><span style=color:#000;font-weight:700>();</span>
+    <span style=color:#000;font-weight:700>};</span>
+<span style=color:#000;font-weight:700>}</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<div class=td-content style=page-break-before:always>
+<h1 id=pg-a142eed32f65caf3e61d132e564cdcdf>2.2.2 - Core Header</h1>
+<div class=lead>Here is the header for the Core object.</div>
+<div class=highlight><div style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">26
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">27
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">28
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">29
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">30
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">31
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">32
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">33
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">34
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">35
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">36
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">37
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">38
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#204a87;font-weight:700>namespace</span> <span style=color:#000>Zia</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>struct</span> <span style=color:#000>Connection</span> <span style=color:#000;font-weight:700>{</span>
+        <span style=color:#000>boost</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>asio</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>ip</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>tcp</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>socket</span> <span style=color:#000>socket</span><span style=color:#000;font-weight:700>;</span>
+        <span style=color:#000>boost</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>asio</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>streambuf</span> <span style=color:#000>read_buffer</span><span style=color:#000;font-weight:700>;</span>
+        <span style=color:#000>Connection</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>boost</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>asio</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>io_service</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>io_service</span><span style=color:#000;font-weight:700>)</span> <span style=color:#ce5c00;font-weight:700>:</span> <span style=color:#000>socket</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>io_service</span><span style=color:#000;font-weight:700>),</span> <span style=color:#000>read_buffer</span><span style=color:#000;font-weight:700>()</span> <span style=color:#000;font-weight:700>{</span> <span style=color:#000;font-weight:700>}</span>
+        <span style=color:#000>Connection</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>boost</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>asio</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>io_service</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>io_service</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>size_t</span> <span style=color:#000>max_buffer_size</span><span style=color:#000;font-weight:700>)</span> <span style=color:#ce5c00;font-weight:700>:</span> <span style=color:#000>socket</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>io_service</span><span style=color:#000;font-weight:700>),</span> <span style=color:#000>read_buffer</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>max_buffer_size</span><span style=color:#000;font-weight:700>)</span> <span style=color:#000;font-weight:700>{</span> <span style=color:#000;font-weight:700>}</span>
+    <span style=color:#000;font-weight:700>};</span>
+<span style=color:#000;font-weight:700>}</span>
+
+<span style=color:#204a87;font-weight:700>namespace</span> <span style=color:#000>Zia</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>class</span> <span style=color:#000>Core</span> <span style=color:#000;font-weight:700>{</span>
+        <span style=color:#000>boost</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>asio</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>io_service</span> <span style=color:#000>m_ioservice</span><span style=color:#000;font-weight:700>;</span>
+        <span style=color:#000>boost</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>asio</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>ip</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>tcp</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>acceptor</span> <span style=color:#000>m_acceptor</span><span style=color:#000;font-weight:700>;</span>
+        <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>list</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#000>Connection</span><span style=color:#ce5c00;font-weight:700>&gt;</span> <span style=color:#000>m_connections</span><span style=color:#000;font-weight:700>;</span>
+        <span style=color:#204a87;font-weight:700>using</span> <span style=color:#000>con_handle_t</span> <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>list</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#000>Connection</span><span style=color:#ce5c00;font-weight:700>&gt;::</span><span style=color:#000>iterator</span><span style=color:#000;font-weight:700>;</span>
+        <span style=color:#204a87;font-weight:700>public</span><span style=color:#ce5c00;font-weight:700>:</span>
+            <span style=color:#000>Core</span><span style=color:#000;font-weight:700>();</span>
+            <span style=color:#ce5c00;font-weight:700>~</span><span style=color:#000>Core</span><span style=color:#000;font-weight:700>();</span>
+
+            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>CoreManager</span><span style=color:#000;font-weight:700>();</span>
+            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>run_modules</span><span style=color:#000;font-weight:700>();</span>
+        <span style=color:#204a87;font-weight:700>protected</span><span style=color:#ce5c00;font-weight:700>:</span>
+        <span style=color:#204a87;font-weight:700>private</span><span style=color:#ce5c00;font-weight:700>:</span>
+            <span style=color:#000>Config</span> <span style=color:#000>config</span><span style=color:#000;font-weight:700>;</span>
+            <span style=color:#000>ModuleLoader</span> <span style=color:#000>moduleLoader</span><span style=color:#000;font-weight:700>;</span>
+            <span style=color:#000>ThreadPool</span> <span style=color:#000>threadPool</span><span style=color:#000;font-weight:700>;</span>
+            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>listen</span><span style=color:#000;font-weight:700>(</span><span style=color:#204a87;font-weight:700>uint16_t</span> <span style=color:#000>port</span><span style=color:#000;font-weight:700>);</span>
+            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>handle_read</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>con_handle_t</span> <span style=color:#000>con_handle</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>boost</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>system</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>error_code</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>err</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>size_t</span> <span style=color:#000>bytes_transfered</span><span style=color:#000;font-weight:700>);</span>
+            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>do_async_read</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>con_handle_t</span> <span style=color:#000>con_handle</span><span style=color:#000;font-weight:700>);</span>
+            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>handle_write</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>con_handle_t</span> <span style=color:#000>con_handle</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>shared_ptr</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span><span style=color:#ce5c00;font-weight:700>&gt;</span> <span style=color:#000>msg_buffer</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>boost</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>system</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>error_code</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>err</span><span style=color:#000;font-weight:700>);</span>
+            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>handle_accept</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>con_handle_t</span> <span style=color:#000>con_handle</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>boost</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>system</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>error_code</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>err</span><span style=color:#000;font-weight:700>);</span>
+            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>start_accept</span><span style=color:#000;font-weight:700>();</span>
+            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>run</span><span style=color:#000;font-weight:700>();</span>
+            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>stop_server</span><span style=color:#000;font-weight:700>();</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>vector</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span><span style=color:#ce5c00;font-weight:700>&gt;</span> <span style=color:#000>msg</span><span style=color:#000;font-weight:700>;</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#204a87;font-weight:700>thread</span> <span style=color:#000>endingThread</span><span style=color:#000;font-weight:700>;</span>
+    <span style=color:#000;font-weight:700>};</span>
+<span style=color:#000;font-weight:700>}</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<div class=td-content style=page-break-before:always>
+<h1 id=pg-48409a24c1b717dfa33e98248b7c55b0>2.2.3 - fatalException Header</h1>
+<div class=lead>Here is the header for the FatalException object.</div>
+<div class=highlight><div style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#204a87;font-weight:700>namespace</span> <span style=color:#000>Zia</span>
+<span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>class</span> <span style=color:#000>fatalException</span> <span style=color:#ce5c00;font-weight:700>:</span> <span style=color:#204a87;font-weight:700>public</span> <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>exception</span>
+    <span style=color:#000;font-weight:700>{</span>
+        <span style=color:#204a87;font-weight:700>private</span><span style=color:#ce5c00;font-weight:700>:</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#000>msg</span><span style=color:#000;font-weight:700>;</span> <span style=color:#8f5902;font-style:italic>// The message of the error
+</span><span style=color:#8f5902;font-style:italic></span>            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#000>function</span><span style=color:#000;font-weight:700>;</span> <span style=color:#8f5902;font-style:italic>// The function where the error occured
+</span><span style=color:#8f5902;font-style:italic></span>        <span style=color:#204a87;font-weight:700>public</span><span style=color:#ce5c00;font-weight:700>:</span>
+            <span style=color:#000>fatalException</span><span style=color:#000;font-weight:700>(</span><span style=color:#204a87;font-weight:700>const</span> <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>msg</span><span style=color:#000;font-weight:700>,</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>func</span><span style=color:#000;font-weight:700>);</span> <span style=color:#8f5902;font-style:italic>// The constructor of the error. It takes has parameters a message, and the name of the function.
+</span><span style=color:#8f5902;font-style:italic></span>            <span style=color:#8f5902;font-style:italic>/* Here is how you should throw this error :  
+</span><span style=color:#8f5902;font-style:italic>            * throw(Zia::fatalException(YOUR_MESSAGE, YOUR FUNCTION));
+</span><span style=color:#8f5902;font-style:italic>            */</span>
+            <span style=color:#204a87;font-weight:700>const</span> <span style=color:#204a87;font-weight:700>char</span> <span style=color:#ce5c00;font-weight:700>*</span><span style=color:#000>what</span><span style=color:#000;font-weight:700>()</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#204a87;font-weight:700>throw</span><span style=color:#000;font-weight:700>();</span> <span style=color:#8f5902;font-style:italic>// Returns the error message
+</span><span style=color:#8f5902;font-style:italic></span>            <span style=color:#204a87;font-weight:700>const</span> <span style=color:#204a87;font-weight:700>char</span> <span style=color:#ce5c00;font-weight:700>*</span><span style=color:#000>getErrorFunction</span><span style=color:#000;font-weight:700>()</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#204a87;font-weight:700>throw</span><span style=color:#000;font-weight:700>();</span> <span style=color:#8f5902;font-style:italic>// Returns the name of the function given in the constructor
+</span><span style=color:#8f5902;font-style:italic></span>            <span style=color:#ce5c00;font-weight:700>~</span><span style=color:#000>fatalException</span><span style=color:#000;font-weight:700>()</span> <span style=color:#204a87;font-weight:700>throw</span><span style=color:#000;font-weight:700>();</span>
+    <span style=color:#000;font-weight:700>};</span>
+    
+<span style=color:#000;font-weight:700>}</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<div class=td-content style=page-break-before:always>
+<h1 id=pg-beb22cfd8077ec6f88ff74376df29a86>2.2.4 - Logger Header</h1>
+<div class=lead>Here is the header for the Logger object.</div>
+<div class=highlight><div style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#204a87;font-weight:700>namespace</span> <span style=color:#000>Zia</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#8f5902;font-style:italic>// The enumeration for all the message types
+</span><span style=color:#8f5902;font-style:italic></span>    <span style=color:#204a87;font-weight:700>enum</span> <span style=color:#000>LoggerType</span> <span style=color:#000;font-weight:700>{</span>
+        <span style=color:#000>Trace</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#000>Debug</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#000>Info</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#000>Warning</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#000>Error</span><span style=color:#000;font-weight:700>,</span>
+        <span style=color:#000>Fatal</span>
+    <span style=color:#000;font-weight:700>};</span>
+    <span style=color:#204a87;font-weight:700>class</span> <span style=color:#000>Logger</span> <span style=color:#000;font-weight:700>{</span>
+        <span style=color:#204a87;font-weight:700>public</span><span style=color:#ce5c00;font-weight:700>:</span>
+            <span style=color:#000>Logger</span><span style=color:#000;font-weight:700>();</span>
+            <span style=color:#ce5c00;font-weight:700>~</span><span style=color:#000>Logger</span><span style=color:#000;font-weight:700>();</span>
+
+            <span style=color:#204a87;font-weight:700>static</span> <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>Log</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>LoggerType</span> <span style=color:#000>type</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>msg</span><span style=color:#000;font-weight:700>);</span> <span style=color:#8f5902;font-style:italic>// The function to log something. It takes as parameters a Zia::LoggerType, and the log message
+</span><span style=color:#8f5902;font-style:italic></span>        <span style=color:#204a87;font-weight:700>protected</span><span style=color:#ce5c00;font-weight:700>:</span>
+        <span style=color:#204a87;font-weight:700>private</span><span style=color:#ce5c00;font-weight:700>:</span>
+    <span style=color:#000;font-weight:700>};</span>
+<span style=color:#000;font-weight:700>}</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<div class=td-content style=page-break-before:always>
+<h1 id=pg-24fdfc9437eea9a3bd0b58f6ec0c9602>2.2.5 - ModuleLoader Header</h1>
+<div class=lead>Here is the header for the Module Loader object.</div>
+<div class=highlight><div style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">26
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">27
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">28
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">29
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">30
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#204a87;font-weight:700>namespace</span> <span style=color:#000>Zia</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>class</span> <span style=color:#000>ModuleLoader</span> <span style=color:#000;font-weight:700>{</span>
+        <span style=color:#204a87;font-weight:700>public</span><span style=color:#ce5c00;font-weight:700>:</span>
+            <span style=color:#000>ModuleLoader</span><span style=color:#000;font-weight:700>();</span>
+            <span style=color:#8f5902;font-style:italic>/*
+</span><span style=color:#8f5902;font-style:italic>             * Used to load a module. The &#34;name&#34; parameter is the name where the module will be stored in the map 
+</span><span style=color:#8f5902;font-style:italic>             */</span>
+            <span style=color:#000>boost</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>function</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#000>boost</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>shared_ptr</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#000>IModules</span><span style=color:#ce5c00;font-weight:700>&gt;</span><span style=color:#000;font-weight:700>()</span><span style=color:#ce5c00;font-weight:700>&gt;</span> <span style=color:#000>load</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>path</span><span style=color:#000;font-weight:700>,</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>name</span><span style=color:#000;font-weight:700>);</span>
+            <span style=color:#8f5902;font-style:italic>/*
+</span><span style=color:#8f5902;font-style:italic>             * Function used to unload the module.
+</span><span style=color:#8f5902;font-style:italic>             */</span>
+            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>unload</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>name</span><span style=color:#000;font-weight:700>);</span>
+            <span style=color:#8f5902;font-style:italic>/*
+</span><span style=color:#8f5902;font-style:italic>             * Return a function to call the IModules members.
+</span><span style=color:#8f5902;font-style:italic>             */</span>
+            <span style=color:#000>boost</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>function</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#000>boost</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>shared_ptr</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#000>IModules</span><span style=color:#ce5c00;font-weight:700>&gt;</span><span style=color:#000;font-weight:700>()</span><span style=color:#ce5c00;font-weight:700>&gt;</span> <span style=color:#000>getModule</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>name</span><span style=color:#000;font-weight:700>);</span>
+            <span style=color:#8f5902;font-style:italic>/*
+</span><span style=color:#8f5902;font-style:italic>             * Check if the module if loaded.
+</span><span style=color:#8f5902;font-style:italic>             */</span>
+            <span style=color:#204a87;font-weight:700>bool</span> <span style=color:#000>isLoaded</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>name</span><span style=color:#000;font-weight:700>);</span>
+            <span style=color:#ce5c00;font-weight:700>~</span><span style=color:#000>ModuleLoader</span><span style=color:#000;font-weight:700>();</span>
+
+        <span style=color:#204a87;font-weight:700>protected</span><span style=color:#ce5c00;font-weight:700>:</span>
+        <span style=color:#204a87;font-weight:700>private</span><span style=color:#ce5c00;font-weight:700>:</span>
+            <span style=color:#8f5902;font-style:italic>/*
+</span><span style=color:#8f5902;font-style:italic>             * The map of all the modules. 
+</span><span style=color:#8f5902;font-style:italic>             */</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>map</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>boost</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>dll</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>shared_library</span><span style=color:#ce5c00;font-weight:700>&gt;</span> <span style=color:#000>moduleList</span><span style=color:#000;font-weight:700>;</span>
+    <span style=color:#000;font-weight:700>};</span>
+<span style=color:#000;font-weight:700>}</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<div class=td-content style=page-break-before:always>
+<h1 id=pg-3b5eecfcd43d5c6261106cdbaa8a2e61>2.2.6 - ThreadPool Header</h1>
+<div class=lead>Here is the header for the ThreadPool object.</div>
+<div class=highlight><div style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">26
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">27
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">28
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">29
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">30
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">31
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">32
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">33
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">34
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">35
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">36
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">37
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">38
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">39
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">40
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">41
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">42
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">43
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">44
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">45
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">46
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">47
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">48
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">49
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#204a87;font-weight:700>namespace</span> <span style=color:#000>Zia</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>class</span> <span style=color:#000>ThreadPool</span> <span style=color:#000;font-weight:700>{</span>
+        <span style=color:#204a87;font-weight:700>public</span><span style=color:#ce5c00;font-weight:700>:</span>
+            <span style=color:#000>ThreadPool</span><span style=color:#000;font-weight:700>();</span>
+            <span style=color:#ce5c00;font-weight:700>~</span><span style=color:#000>ThreadPool</span><span style=color:#000;font-weight:700>();</span>
+            <span style=color:#8f5902;font-style:italic>/*
+</span><span style=color:#8f5902;font-style:italic>             * Function used to create the number of workers given in parameters.
+</span><span style=color:#8f5902;font-style:italic>             * You cannot create more workers than the &#34;max_workers&#34; number.
+</span><span style=color:#8f5902;font-style:italic>             */</span>
+            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>createWorker</span><span style=color:#000;font-weight:700>(</span><span style=color:#204a87;font-weight:700>int</span> <span style=color:#000>nbWorker</span><span style=color:#000;font-weight:700>);</span>
+            <span style=color:#8f5902;font-style:italic>/*
+</span><span style=color:#8f5902;font-style:italic>             * Function to push a function in the task list.
+</span><span style=color:#8f5902;font-style:italic>             */</span>
+            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>push</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>function</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#204a87;font-weight:700>void</span><span style=color:#000;font-weight:700>()</span><span style=color:#ce5c00;font-weight:700>&gt;</span><span style=color:#000;font-weight:700>);</span>
+            <span style=color:#8f5902;font-style:italic>/*
+</span><span style=color:#8f5902;font-style:italic>             * Function to pop the first function in the task list, and returns it.
+</span><span style=color:#8f5902;font-style:italic>             */</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>function</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#204a87;font-weight:700>void</span><span style=color:#000;font-weight:700>()</span><span style=color:#ce5c00;font-weight:700>&gt;</span> <span style=color:#000>pop</span><span style=color:#000;font-weight:700>();</span>
+            <span style=color:#8f5902;font-style:italic>/*
+</span><span style=color:#8f5902;font-style:italic>             * Function to join all the thread, and clear the task list.
+</span><span style=color:#8f5902;font-style:italic>             */</span>
+            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>stopThreadPool</span><span style=color:#000;font-weight:700>();</span>
+            <span style=color:#8f5902;font-style:italic>/*
+</span><span style=color:#8f5902;font-style:italic>             * Check if the threadPool is running.
+</span><span style=color:#8f5902;font-style:italic>             */</span>
+            <span style=color:#204a87;font-weight:700>bool</span> <span style=color:#000>isRunning</span><span style=color:#000;font-weight:700>();</span>
+        <span style=color:#204a87;font-weight:700>protected</span><span style=color:#ce5c00;font-weight:700>:</span>
+        <span style=color:#204a87;font-weight:700>private</span><span style=color:#ce5c00;font-weight:700>:</span>
+            <span style=color:#204a87;font-weight:700>bool</span> <span style=color:#000>doesRun</span><span style=color:#000;font-weight:700>;</span>
+            <span style=color:#8f5902;font-style:italic>/*
+</span><span style=color:#8f5902;font-style:italic>             * The list of all the thread up and running.
+</span><span style=color:#8f5902;font-style:italic>             */</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>vector</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#204a87;font-weight:700>thread</span><span style=color:#ce5c00;font-weight:700>&gt;</span> <span style=color:#000>workers</span><span style=color:#000;font-weight:700>;</span>
+            <span style=color:#204a87;font-weight:700>int</span> <span style=color:#000>max_worker</span><span style=color:#000;font-weight:700>;</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>mutex</span> <span style=color:#000>_mutex</span><span style=color:#000;font-weight:700>;</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>condition_variable</span> <span style=color:#000>_cond</span><span style=color:#000;font-weight:700>;</span>
+            <span style=color:#8f5902;font-style:italic>/*
+</span><span style=color:#8f5902;font-style:italic>             * The list of the function that need to be runned by the workers.
+</span><span style=color:#8f5902;font-style:italic>             */</span>
+            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>vector</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>function</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#204a87;font-weight:700>void</span><span style=color:#000;font-weight:700>()</span><span style=color:#ce5c00;font-weight:700>&gt;&gt;</span> <span style=color:#000>taskList</span><span style=color:#000;font-weight:700>;</span>
+            <span style=color:#8f5902;font-style:italic>/*
+</span><span style=color:#8f5902;font-style:italic>             * The function runned by all the worker.
+</span><span style=color:#8f5902;font-style:italic>             * This function pop the taskList it&#39;s not empty.
+</span><span style=color:#8f5902;font-style:italic>             * Then a worker run the function that has been poped.
+</span><span style=color:#8f5902;font-style:italic>             * If the task list is empty, this function put the worker in a waiting state.
+</span><span style=color:#8f5902;font-style:italic>             */</span>
+            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>run_modules</span><span style=color:#000;font-weight:700>();</span>
+    <span style=color:#000;font-weight:700>};</span>
+<span style=color:#000;font-weight:700>}</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<div class=td-content style=page-break-before:always>
+<h1 id=pg-3034c988c861e9e545da88c236839666>2.3 - Modules Headers</h1>
+<div class=lead>What does your user need to know to try your project?</div>
+</div>
+<div class=td-content>
+<h1 id=pg-eb7bb1075051bbc22919ffedcce605cd>2.3.1 - IModules Header</h1>
+<div class=lead>Here is the header for the IModule object.</div>
+<div class=highlight><div style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#204a87;font-weight:700>namespace</span> <span style=color:#000>Zia</span> <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>class</span> <span style=color:#000>IModules</span> <span style=color:#000;font-weight:700>{</span>
+        <span style=color:#204a87;font-weight:700>public</span><span style=color:#ce5c00;font-weight:700>:</span>
+            <span style=color:#204a87;font-weight:700>virtual</span> <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>getModuleName</span><span style=color:#000;font-weight:700>()</span> <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>0</span><span style=color:#000;font-weight:700>;</span>
+            <span style=color:#204a87;font-weight:700>virtual</span> <span style=color:#204a87;font-weight:700>bool</span> <span style=color:#000>runModule</span><span style=color:#000;font-weight:700>()</span> <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>0</span><span style=color:#000;font-weight:700>;</span>
+
+            <span style=color:#204a87;font-weight:700>virtual</span> <span style=color:#ce5c00;font-weight:700>~</span><span style=color:#000>IModules</span><span style=color:#000;font-weight:700>()</span> <span style=color:#000;font-weight:700>{}</span>
+
+        <span style=color:#204a87;font-weight:700>protected</span><span style=color:#ce5c00;font-weight:700>:</span>
+        <span style=color:#204a87;font-weight:700>private</span><span style=color:#ce5c00;font-weight:700>:</span>
+    <span style=color:#000;font-weight:700>};</span>
+<span style=color:#000;font-weight:700>}</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<div class=td-content style=page-break-before:always>
+<h1 id=pg-a099b94ab0f80f537f929b2076232bc0>2.3.2 - ModuleTemplate Header</h1>
+<div class=lead>Here is the header for the Module Template object.</div>
+<div class=highlight><div style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">26
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">27
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">28
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">29
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#204a87;font-weight:700>namespace</span> <span style=color:#000>Zia</span>
+<span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>class</span> <span style=color:#000>moduleTemplate</span> <span style=color:#ce5c00;font-weight:700>:</span> <span style=color:#204a87;font-weight:700>public</span> <span style=color:#000>IModules</span>
+    <span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>private</span><span style=color:#ce5c00;font-weight:700>:</span>
+    <span style=color:#204a87;font-weight:700>public</span><span style=color:#ce5c00;font-weight:700>:</span>
+        <span style=color:#000>moduleTemplate</span><span style=color:#000;font-weight:700>();</span>
+        <span style=color:#8f5902;font-style:italic>/*
+</span><span style=color:#8f5902;font-style:italic>         * Returns the name of the module.
+</span><span style=color:#8f5902;font-style:italic>         */</span>
+        <span style=color:#204a87;font-weight:700>const</span> <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000>getModuleName</span><span style=color:#000;font-weight:700>();</span>
+        <span style=color:#8f5902;font-style:italic>/*
+</span><span style=color:#8f5902;font-style:italic>         * Run the module.
+</span><span style=color:#8f5902;font-style:italic>         */</span>
+        <span style=color:#204a87;font-weight:700>bool</span> <span style=color:#000>runModule</span><span style=color:#000;font-weight:700>();</span>
+        <span style=color:#ce5c00;font-weight:700>~</span><span style=color:#000>moduleTemplate</span><span style=color:#000;font-weight:700>();</span>
+    <span style=color:#000;font-weight:700>};</span>
+    <span style=color:#8f5902;font-style:italic>/*
+</span><span style=color:#8f5902;font-style:italic>     * Returns a shared pointer of the module.
+</span><span style=color:#8f5902;font-style:italic>     */</span>
+    <span style=color:#000>boost</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>shared_ptr</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#000>IModules</span><span style=color:#ce5c00;font-weight:700>&gt;</span> <span style=color:#000>createModule</span><span style=color:#000;font-weight:700>()</span> <span style=color:#000;font-weight:700>{</span>
+        <span style=color:#204a87;font-weight:700>return</span> <span style=color:#000>boost</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>make_shared</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#000>moduleTemplate</span><span style=color:#ce5c00;font-weight:700>&gt;</span><span style=color:#000;font-weight:700>();</span>
+    <span style=color:#000;font-weight:700>}</span>
+<span style=color:#000;font-weight:700>}</span>
+
+<span style=color:#000>BOOST_DLL_ALIAS</span><span style=color:#000;font-weight:700>(</span>
+    <span style=color:#000>Zia</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>createModule</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#000>createModule</span>
+<span style=color:#000;font-weight:700>)</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<div class=td-content style=page-break-before:always>
+<h1 id=pg-ad14978bb3c24da59bcc3d0c96f60313>3 - Subject</h1>
 <div class=lead>Just the project subject</div>
 <h2 id=binary-name-and-build-informations>Binary name and build informations</h2>
 <ul>
