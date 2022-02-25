@@ -1,25 +1,5 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ALED – Examples</title><link>https://apialed.github.io/categories/examples/</link><description>Recent content in Examples on ALED</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://apialed.github.io/categories/examples/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Diagrams</title><link>https://apialed.github.io/docs/diagrams/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://apialed.github.io/docs/diagrams/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>This is a placeholder page that shows you how to use this template site.&lt;/p>
-&lt;/div>
-&lt;p>Information in this section helps your user try your project themselves.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>What do your users need to do to start using your project? This could include downloading/installation instructions, including any prerequisites or system requirements.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Introductory “Hello World” example, if appropriate. More complex tutorials should live in the Tutorials section.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>Consider using the headings below for your getting started page. You can delete any that are not applicable to your project.&lt;/p>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>Are there any system requirements for using your project? What languages are supported (if any)? Do users need to already have any software or tools installed?&lt;/p>
-&lt;h2 id="installation">Installation&lt;/h2>
-&lt;p>Where can your user find your project code? How can they install it (binaries, installable package, build from source)? Are there multiple options/versions they can install and how should they choose the right one for them?&lt;/p>
-&lt;h2 id="setup">Setup&lt;/h2>
-&lt;p>Is there any initial setup users need to do after installation to try your project?&lt;/p>
-&lt;h2 id="try-it-out">Try it out!&lt;/h2>
-&lt;p>Can your users test their installation, for example by running a command or deploying a Hello World example?&lt;/p></description></item><item><title>Docs: Class Diagram</title><link>https://apialed.github.io/docs/diagrams/flow-diagram/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>https://apialed.github.io/docs/diagrams/flow-diagram/</guid><description>
+&lt;p>Here is all the information you&amp;rsquo;ll need to know about the class communication for the Zia project.&lt;/p></description></item><item><title>Docs: Class Diagram</title><link>https://apialed.github.io/docs/diagrams/flow-diagram/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>https://apialed.github.io/docs/diagrams/flow-diagram/</guid><description>
 &lt;h2 id="class-diagram">&lt;strong>Class diagram&lt;/strong>&lt;/h2>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>&lt;img src="http://image.noelshack.com/fichiers/2022/08/4/1645710689-diagramme-class.png" alt="Full Image">&lt;/p>
