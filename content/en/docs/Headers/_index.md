@@ -5,5 +5,5 @@ title: "Headers"
 linkTitle: "Headers"
 weight: 2
 description: >
-  What does your user need to know to try your project?
+  All the headers for the Zia project that we currently have.
 ---

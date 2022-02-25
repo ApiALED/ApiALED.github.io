@@ -12,5 +12,3 @@ description: C'est la classe.
 {{% pageinfo %}}
 ![Full Image](http://image.noelshack.com/fichiers/2022/08/4/1645710689-diagramme-class.png)
 {{% /pageinfo %}}
-
-

@@ -5,5 +5,5 @@ title: "Communication Headers"
 linkTitle: "Communication Headers"
 weight: 2
 description: >
-  What does your user need to know to try your project?
+  The header of the communication object. There are defined in a namespace called "Network".
 ---

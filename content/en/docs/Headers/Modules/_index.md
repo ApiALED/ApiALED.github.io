@@ -5,5 +5,5 @@ title: "Modules Headers"
 linkTitle: "Modules Headers"
 weight: 2
 description: >
-  What does your user need to know to try your project?
+  All of the header files for the Modules. The objects are in the "Zia" namespace.
 ---
