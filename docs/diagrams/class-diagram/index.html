@@ -20,10 +20,10 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://apialed.github.io/docs/diagrams/class-diagram/"><meta property="article:section" content="docs">
 <meta property="article:published_time" content="2017-01-05T00:00:00+00:00">
-<meta property="article:modified_time" content="2022-03-03T11:34:52+01:00"><meta property="og:site_name" content="ALED">
+<meta property="article:modified_time" content="2022-03-04T14:28:31+01:00"><meta property="og:site_name" content="ALED">
 <meta itemprop=name content="Flow Diagram">
 <meta itemprop=description content="Flow."><meta itemprop=datePublished content="2017-01-05T00:00:00+00:00">
-<meta itemprop=dateModified content="2022-03-03T11:34:52+01:00">
+<meta itemprop=dateModified content="2022-03-04T14:28:31+01:00">
 <meta itemprop=wordCount content="383">
 <meta itemprop=keywords content="test,sample,docs,"><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Flow Diagram">
@@ -132,7 +132,7 @@
 <p><img src=http://image.noelshack.com/fichiers/2022/08/1/1645439643-config.png alt="Full Image"></p></div><p>It MUST have a <strong>“Modules”</strong> flag which MUST have a <strong>“Path”</strong> and <strong>“List”</strong> flag, the list represents the order the module needs to be loaded and used, and the path is where they are stored.</p><p>It MUST have a <strong>“Hosts”</strong> flag which will indicate the address will listen on, this flag could change in the future.</p><p>It MUST have a <strong>“SSL”</strong> flag which has a <strong>“Certificate”</strong> and <strong>“Key”</strong> path, they will represent the path to find what is needed for the SSL.</p><p>Then we call the Logger to inform the server of the configuration it need.</p><div class="pageinfo pageinfo-primary">
 <p><img src=http://image.noelshack.com/fichiers/2022/08/1/1645440181-second.png alt="Full Image"></p></div><p>Now that we have the path and name of the modules we can start to load them using the <strong>“Module Loader”</strong>.</p><p>Once loaded we can start the <strong>“network”</strong> part, create the listener and socket thanks to the config.</p><p>Once it is done, we start getting HTTP requests by client, we need to store everything inside a request list ! Then the multi-threading starts every worker will start to take a job, don’t forget to mutex the request they take !</p><p>Every worker will go through the list of modules given in the config file, to create a response and send it to the client.</p><p>To be clear, an HTTP request is a processing list. Every module will get as parameters the object, request, response, and PL.</p><ul>
 <li>The request is a representation of the received request; it will get full after the parsing of the client request.</li><li>The response is the object created in function of the received request</li><li>PL is the processing list attached to the request.</li></ul><p>If you have any <strong>fatal error</strong> you should throw a “<strong>fatalException”</strong>, set an error message and catch it in the main function. Then you can use the <strong>“Logger”</strong> to print the error message and also the function where the error occured.</p><div class="text-muted mt-5 pt-3 border-top">
-Last modified 03.03.2022: <a href=https://github.com/google/docsy-example/commit/7f1fe8073c5f0d1cb5387505f4897e1ea0cd0698>Update Flow diagram.md (7f1fe80)</a>
+Last modified 04.03.2022: <a href=https://github.com/google/docsy-example/commit/4681db25aa27862a9d4a1bb4567000b0bfca3301>Update Request Header.md (4681db2)</a>
 </div></div></main></div></div><footer class="bg-dark py-5 row d-print-none">
 <div class="container-fluid mx-sm-5">
 <div class=row>
