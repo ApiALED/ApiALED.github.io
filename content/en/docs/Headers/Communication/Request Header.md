@@ -11,6 +11,54 @@ description: Here is the header for the request object.
 namespace Network {
     class Request {
         public:
+            const std::vector<std::string> Methods = {
+                "GET",
+                "HEAD",
+                "POST",
+                "PUT",
+                "DELETE",
+                "CONNECT",
+                "OPTIONS",
+                "TRACE",
+                "PATCH",
+            };
+            const std::vector<std::string> Headers = {
+                "A-IM",
+                "Accept",
+                "Accept-Charset",
+                "Accept-Encoding",
+                "Accept-Language",
+                "Accept-Datetime",
+                "Access-Control-Request-Method",
+                "Access-Control-Request-Headers",
+                "Authorization",
+                "Cache-Control",
+                "Connection",
+                "Content-Length",
+                "Content-Type",
+                "Cookie",
+                "Date",
+                "Expect",
+                "Forwarded",
+                "From",
+                "Host",
+                "If-Match",
+                "If-Modified-Since",
+                "If-None-Match",
+                "If-Range",
+                "If-Unmodified-Since",
+                "Max-Forwards",
+                "Origin",
+                "Pragma",
+                "Proxy-Authorization",
+                "Range",
+                "Referer",
+                "TE",
+                "User-Agent",
+                "Upgrade",
+                "Via",
+                "Warning"
+            };
             Request();
             ~Request();
             void setURL(const std::string &);
