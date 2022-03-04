@@ -220,39 +220,273 @@ This is the multi-page printable view of this section.
 </span></span><span style=display:flex><span><span style=color:#000;font-weight:700>}</span></span></span></code></pre></td></tr></table></div></div></div><div class=td-content style=page-break-before:always>
 <h1 id=pg-344c765dcafe9d915d94947f94473d5b>2.1.2 - Response Header</h1><div class=lead>Here is the header for the response object.</div><div class=highlight><div style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
 <table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
-<pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+<pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  1
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  2
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  3
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  4
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  5
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  6
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  7
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  8
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">  9
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 10
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 11
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 12
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 13
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 14
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 15
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 16
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 17
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 18
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 19
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 20
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 21
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 22
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 23
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 24
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 25
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 26
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 27
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 28
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 29
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 30
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 31
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 32
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 33
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 34
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 35
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 36
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 37
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 38
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 39
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 40
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 41
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 42
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 43
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 44
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 45
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 46
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 47
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 48
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 49
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 50
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 51
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 52
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 53
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 54
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 55
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 56
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 57
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 58
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 59
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 60
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 61
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 62
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 63
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 64
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 65
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 66
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 67
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 68
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 69
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 70
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 71
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 72
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 73
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 74
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 75
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 76
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 77
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 78
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 79
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 80
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 81
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 82
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 83
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 84
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 85
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 86
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 87
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 88
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 89
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 90
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 91
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 92
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 93
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 94
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 95
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 96
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 97
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 98
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 99
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">100
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">101
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">102
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">103
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">104
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">105
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">106
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">107
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">108
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">109
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">110
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">111
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">112
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">113
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">114
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">115
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">116
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">117
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">118
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">119
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">120
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">121
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">122
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">123
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">124
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">125
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">126
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">127
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">128
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">129
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">130
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">131
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">132
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">133
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">134
 </span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
 <pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#204a87;font-weight:700>namespace</span> <span style=color:#000>Network</span> <span style=color:#000;font-weight:700>{</span>
 </span></span><span style=display:flex><span>    <span style=color:#204a87;font-weight:700>class</span> <span style=color:#000>Response</span> <span style=color:#000;font-weight:700>{</span>
 </span></span><span style=display:flex><span>        <span style=color:#204a87;font-weight:700>public</span><span style=color:#ce5c00;font-weight:700>:</span>
+</span></span><span style=display:flex><span>            <span style=color:#204a87;font-weight:700>enum</span> <span style=color:#000>StatusCode</span>
+</span></span><span style=display:flex><span>            <span style=color:#000;font-weight:700>{</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>Continue</span>                     <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>100</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>SwitchingProtocols</span>           <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>101</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>Ok</span>                           <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>200</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>Created</span>                      <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>201</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>Accepted</span>                     <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>202</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>NonAuthoritativeInformation</span>  <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>203</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>NoContent</span>                    <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>204</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>ResetContent</span>                 <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>205</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>PartialContent</span>               <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>206</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>MultipleChoices</span>              <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>300</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>MovedPermanently</span>             <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>301</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>MovedTemporarily</span>             <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>302</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>NotModified</span>                  <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>304</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>UseProxy</span>                     <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>305</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>TemporaryRedirect</span>            <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>307</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>BadRequest</span>                   <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>400</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>Unauthorized</span>                 <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>401</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>PaymentRequired</span>              <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>402</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>Forbidden</span>                    <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>403</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>NotFound</span>                     <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>404</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>MethodNotAllowed</span>             <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>405</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>NotAcceptable</span>                <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>406</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>ProxyAuthenticationRequired</span>  <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>407</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>RequestTimeOut</span>               <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>408</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>Conflict</span>                     <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>409</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>Gone</span>                         <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>410</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>LengthRequired</span>               <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>411</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>PreconditionFailed</span>           <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>412</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>RequestEntityTooLarge</span>        <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>413</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>RequestURITooLarge</span>           <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>414</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>UnsupportedMediaType</span>         <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>415</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>RequestedRangeNotSatisfiable</span> <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>416</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>ExpectationFailed</span>            <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>417</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>InternalServerError</span>          <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>500</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>NotImplemented</span>               <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>501</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>BadGateway</span>                   <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>502</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>ServiceUnavailable</span>           <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>503</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>GatewayTimeout</span>               <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>504</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>                <span style=color:#000>HTTPVersionNotSupported</span>      <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#0000cf;font-weight:700>505</span>
+</span></span><span style=display:flex><span>            <span style=color:#000;font-weight:700>};</span>
+</span></span><span style=display:flex><span>            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>map</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span><span style=color:#ce5c00;font-weight:700>&gt;</span> <span style=color:#000>mimetype</span> <span style=color:#000;font-weight:700>{</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;aac&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;audio/aac&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;abw&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/x-abiword&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;arc&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/octet-stream&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;avi&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;video/x-msvideo&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;azw&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/vnd.amazon.ebook&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;bin&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/octet-stream&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;bmp&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;image/bmp&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;bz&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/x-bzip&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;bz2&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/x-bzip2&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;csh&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/x-csh&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;css&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;text/css&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;csv&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;text/csv&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;doc&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/msword&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;docx&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/vnd.openxmlformats-officedocument.wordprocessingml.document&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;eot&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/vnd.ms-fontobject&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;epub&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/epub+zip&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;gif&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;image/gif&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;htm&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;text/html&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;html&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;text/html&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;ico&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;image/x-icon&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;ics&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;text/calendar&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;jar&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/java-archive&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;jpeg&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;image/jpeg&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;jpg&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;image/jpeg&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;js&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/javascript&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;json&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/json&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;mid&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;audio/midi&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;midi&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;audio/midi&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;mpeg&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;video/mpeg&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;mpkg&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/vnd.apple.installer+xml&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;odp&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/vnd.oasis.opendocument.presentation&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;ods&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/vnd.oasis.opendocument.spreadsheet&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;odt&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/vnd.oasis.opendocument.text&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;oga&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;audio/ogg&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;ogv&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;video/ogg&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;ogx&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/ogg&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;otf&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;font/otf&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;png&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;image/png&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;pdf&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/pdf&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;ppt&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/vnd.ms-powerpoint&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;pptx&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/vnd.openxmlformats-officedocument.presentationml.presentation&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;rar&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/x-rar-compressed&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;rtf&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/rtf&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;sh&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/x-sh&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;svg&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;image/svg+xml&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;swf&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/x-shockwave-flash&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;tar&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/x-tar&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;tiff&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;image/tiff&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;tif&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;image/tiff&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;ts&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/typescript&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;ttf&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;font/ttf&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;vsd&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/vnd.visio&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;wav&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;audio/x-wav&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;weba&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;audio/webm&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;webm&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;video/webm&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;webp&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;image/webp&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;woff&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;font/woff&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;woff2&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;font/woff2&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;xhtml&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;	application/xhtml+xml&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;xls&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/vnd.ms-excel&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;xlsx&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;xml&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/xml&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;xul&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/vnd.mozilla.xul+xml&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;xml&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/xml&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;zip&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/zip&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>                <span style=color:#000;font-weight:700>{</span><span style=color:#4e9a06>&#34;7z&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#4e9a06>&#34;application/x-7z-compressed&#34;</span><span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>            <span style=color:#000;font-weight:700>};</span>
 </span></span><span style=display:flex><span>            <span style=color:#000>Response</span><span style=color:#000;font-weight:700>();</span>
 </span></span><span style=display:flex><span>            <span style=color:#ce5c00;font-weight:700>~</span><span style=color:#000>Response</span><span style=color:#000;font-weight:700>();</span>
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>SetStatusCode</span><span style=color:#000;font-weight:700>(</span><span style=color:#204a87;font-weight:700>int</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000;font-weight:700>);</span>
+</span></span><span style=display:flex><span>            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>SetStatusCode</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>Network</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>Response</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>StatusCode</span><span style=color:#000;font-weight:700>);</span>
 </span></span><span style=display:flex><span>            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>SetStatusMsg</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000;font-weight:700>);</span>
+</span></span><span style=display:flex><span>            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>setHeaders</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>vector</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span><span style=color:#ce5c00;font-weight:700>&gt;</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000;font-weight:700>);</span>
+</span></span><span style=display:flex><span>            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>addHeaders</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000;font-weight:700>);</span>
+</span></span><span style=display:flex><span>            <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>setBody</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#204a87;font-weight:700>const</span> <span style=color:#ce5c00;font-weight:700>&amp;</span><span style=color:#000;font-weight:700>);</span>
 </span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>vector</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span><span style=color:#ce5c00;font-weight:700>&gt;</span> <span style=color:#000>getHeaders</span><span style=color:#000;font-weight:700>();</span>
+</span></span><span style=display:flex><span>            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#000>getBody</span><span style=color:#000;font-weight:700>();</span>
 </span></span><span style=display:flex><span>            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#000>getStatusMsg</span><span style=color:#000;font-weight:700>();</span>
-</span></span><span style=display:flex><span>            <span style=color:#204a87;font-weight:700>int</span> <span style=color:#000>getStatusCode</span><span style=color:#000;font-weight:700>();</span>
+</span></span><span style=display:flex><span>            <span style=color:#000>Network</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>Response</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>StatusCode</span> <span style=color:#000>getStatusCode</span><span style=color:#000;font-weight:700>();</span>
 </span></span><span style=display:flex><span>        <span style=color:#204a87;font-weight:700>protected</span><span style=color:#ce5c00;font-weight:700>:</span>
 </span></span><span style=display:flex><span>        <span style=color:#204a87;font-weight:700>private</span><span style=color:#ce5c00;font-weight:700>:</span>
-</span></span><span style=display:flex><span>            <span style=color:#204a87;font-weight:700>int</span> <span style=color:#000>statusCode</span><span style=color:#000;font-weight:700>;</span>
-</span></span><span style=display:flex><span>            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#000>statusMsg</span><span style=color:#000;font-weight:700>;</span>
+</span></span><span style=display:flex><span>            <span style=color:#000>Network</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>Response</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>StatusCode</span> <span style=color:#000>statCode</span><span style=color:#000;font-weight:700>;</span>
+</span></span><span style=display:flex><span>            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>vector</span><span style=color:#ce5c00;font-weight:700>&lt;</span><span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span><span style=color:#ce5c00;font-weight:700>&gt;</span> <span style=color:#000>headers</span><span style=color:#000;font-weight:700>;</span>
+</span></span><span style=display:flex><span>            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#000>body</span><span style=color:#000;font-weight:700>;</span>
+</span></span><span style=display:flex><span>            <span style=color:#000>std</span><span style=color:#ce5c00;font-weight:700>::</span><span style=color:#000>string</span> <span style=color:#000>status</span><span style=color:#000;font-weight:700>;</span>
 </span></span><span style=display:flex><span>    <span style=color:#000;font-weight:700>};</span>
 </span></span><span style=display:flex><span><span style=color:#000;font-weight:700>}</span></span></span></code></pre></td></tr></table></div></div></div><div class=td-content style=page-break-before:always>
 <h1 id=pg-fefc96e5e4994cf914db82252263356b>2.2 - Core Headers</h1><div class=lead>All of the Core&rsquo;s header files. All of the object are in the &ldquo;Zia&rdquo; namespace.</div></div><div class=td-content>
