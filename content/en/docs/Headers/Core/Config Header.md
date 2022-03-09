@@ -14,7 +14,8 @@ namespace Zia {
             Config();
             ~Config();
 
-            bool LoadConfig(std::string const &);
+            bool LoadConfig(const std::string &);
+            std::string const &getPassword();
             std::string const &getModulePath();
             std::list<std::string> const &getModuleList();
             std::string const &getCertPath();
@@ -26,9 +27,10 @@ namespace Zia {
             std::string ModulePath;
             unsigned int port;
             std::string certif_path;
+            std::string password;
             std::string key_path;
             bool isDir(const std::string &in_name);
-            bool readJsonFile(const std::string &path);
+            bool readJsonFile(const std::string &path, const std::string &dir_path);
             bool loadDefaultConfig();
     };
 }
